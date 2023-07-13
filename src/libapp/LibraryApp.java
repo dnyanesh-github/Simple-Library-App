@@ -1,15 +1,7 @@
 package libapp;
 
 public class LibraryApp {
-    private BookRepository bookRepo = new BookRepository();
-
-    public BookRepository getBookRepo() {
-        return bookRepo;
-    }
-
-    public void setBookRepo(BookRepository bookRepo) {
-        this.bookRepo = bookRepo;
-    }
+    final BookRepository bookRepo = new BookRepository();
 
     public void searchByIsbn(String isbn) {
         System.out.printf("Searching for books with ISBN %s.\n", isbn);
